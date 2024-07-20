@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/5df261342964c80028345a0a/train/python
+
+def check_parity(parity, b): 
+    ones = b.count('1')
+    if parity == 'even' and ones %2 == 1:
+        return 1
+    if parity == 'odd' and ones%2 == 0:
+        return 1
+    if parity == 'even' and ones % 2 == 1:
+        return 1
+    if parity == 'odd' and ones % 2 == 0:
+        return 1
+    if parity == 'odd' and ones % 2 == 0:
+        return 1
+    return 
