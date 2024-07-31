@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/58daa7617332e59593000006/train/python
+
+def find_longest(arr):
+    m=max([len(str(el)) for el in arr])
+    for el in arr:
+        if len(str(el))==m:
+            return el
