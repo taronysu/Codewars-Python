@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5b16490986b6d336c900007d/train/python
+
+def my_languages(results):
+    arr = list(results.items())
+    arr.sort(key=lambda x: x[1], reverse=True)
+    sorted_languages = [el[0] for el in arr if el[1] >= 60]
+    return sorted_languages
