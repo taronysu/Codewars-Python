@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/592a6ad46d6c5a62b600003f/train/python
+
+def encode(message):
+    txt = str.maketrans('AagGDdEeRrYyPpOoLlUuKkIi', 'GgaAEeDdYyRrOoPpUuLlIiKk')
+    return message.translate(txt)
+    
+def decode(message):
+    txt = str.maketrans('AagGDdEeRrYyPpOoLlUuKkIi', 'GgaAEeDdYyRrOoPpUuLlIiKk')
+    return message.translate(txt)
