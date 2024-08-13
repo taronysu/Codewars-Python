@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5809c661f15835266900010a/train/python
+
+def double_every_other(lst):
+    for i, el in enumerate(lst):
+        if i % 2 != 0:
+            lst[i] = el * 2
+    return lst
