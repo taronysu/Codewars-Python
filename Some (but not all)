@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/60dda5a66c4cf90026256b75/train/python
+
+def some_but_not_all(seq, pred):
+    som = any(pred(x) for x in seq)
+    al = all(pred(x) for x in seq)
+    if al:
+        return False
+    if som:
+        return True
+    return False
