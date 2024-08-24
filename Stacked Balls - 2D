@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/5bb804397274c772b40000ca/train/python
+
+import math as m
+def stack_height_2d(l):
+    return 0 if not l else ((l - 1) * m.sqrt(3) / 2 + 1)
