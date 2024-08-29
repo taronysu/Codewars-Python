@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5417423f9e2e6c2f040002ae/train/python
+
+def digitize(n):
+    res=[]
+    for el in str(n):
+        res.append(int(el))
+    return res
