@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/541629460b198da04e000bb9/train/python
+
+def last(*args):
+    if len(args) == 1:
+        lst = args[0]
+        if isinstance(lst, (int, float)):
+            return lst
+        return lst[-1]
+    else:
+        return args[-1]
