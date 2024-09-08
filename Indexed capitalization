@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/59cfc09a86a6fdf6df0000f1/train/python
+
+def capitalize(s,ind):
+    return ''.join(el.upper() if i in ind else el for i,el in enumerate(s))
