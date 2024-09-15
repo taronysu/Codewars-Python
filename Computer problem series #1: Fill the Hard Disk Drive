@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/5d49c93d089c6e000ff8428c/train/python
+
+def save(sizes, hd): 
+    res=0
+    s=0
+    for el in sizes:
+        s+=el
+        if s>hd:
+            return res
+        res+=1
+    return res
