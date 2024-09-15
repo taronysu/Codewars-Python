@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/5a262cfb8f27f217f700000b/train/python
+
+def solve(a,b):
+    s1= ''.join([el for el in a if el not in b])
+    s2= ''.join([el for el in b if el not in a])
+    return s1+s2
