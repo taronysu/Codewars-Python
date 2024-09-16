@@ -1,0 +1,16 @@
+https://www.codewars.com/kata/57eb936de1051801d500008a/train/python
+
+def explode(x):
+    ret = []
+    if isinstance(x[0], (int, float)):
+        score = x[0]
+        if isinstance(x[1], (int, float)):
+            score += x[1]
+        ret.extend([x] * score)
+        return ret
+    elif isinstance(x[0], str):
+        if isinstance(x[1], (int, float)):
+            score = x[1]
+            ret.extend([x] * score)
+            return ret
+        return 'Void!'
