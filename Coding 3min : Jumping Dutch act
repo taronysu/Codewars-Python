@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/570bcd9715944a2c8e000009/train/python
+
+def sc(floor: int) -> str:
+    if floor < 2:
+        return ''
+    return 'Aa~ '.join([''] * floor) + 'Pa!' + ('' if floor > 6 else ' Aa!')
