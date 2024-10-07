@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/5e2596a9ad937f002e510435/train/python
+
+def infected(s):
+    ss= s.split('X')
+    total = sum([len(c) for c in ss])
+    z=[el for el in ss if '1' in el]
+    x= [len(el)*'1' for el in z]
+    xx=sum([len(k) for k in x])
+    return xx *100/total if total > 0 else 0
