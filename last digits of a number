@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/5cd5ba1ce4471a00256930c0/train/python
+
+def solution(n,d):
+    if d<=0:
+        return []
+    return [int(el) for el in str(n)][-d:]
