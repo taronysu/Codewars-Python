@@ -1,0 +1,22 @@
+https://www.codewars.com/kata/5a1560c980171f3f68000037/train/python
+
+import re
+def p(line):
+    if line:
+        return str(line) == ''.join(reversed(str(line)))
+    return None
+
+def palindrome(str):
+    str = str.lower()
+    str = re.sub(r'[0-9]', '', str)
+    str = re.sub(r'[^A-Za-z]', '', str)
+    vowels = ''.join(re.findall(r'[aeiou]', str, re.IGNORECASE))
+    rr = ''.join(re.findall(r'[^aeiou]', str, re.IGNORECASE))
+    
+    if p(vowels) and p(rr):
+        return 'both'
+    if p(vowels) and not p(rr):
+        return 'vowel'
+    if not p(vowels) and p(rr):
+        return 'consonant'
+    return 'neither'
