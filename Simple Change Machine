@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/57238766214e4b04b8000011/train/python
+
+def change_me(money_in):
+    if money_in == '£5':
+        return ('20p ' * 25).strip()
+    elif money_in == '£2':
+        return ('20p ' * 10).strip()
+    elif money_in == '£1':
+        return ('20p ' * 5).strip()
+    elif money_in == '50p':
+        return "20p 20p 10p"
+    elif money_in == '20p':
+        return "10p 10p"
+    else:
+        return money_in
