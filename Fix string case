@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/5b180e9fedaa564a7000009a/train/python
+
+def solve(s):
+    count_up = 0
+    count_low = 0
+    for el in s:
+        if el.isupper():
+            count_up += 1
+        else:
+            count_low += 1
+    return s.upper() if count_up > count_low else s.lower()
