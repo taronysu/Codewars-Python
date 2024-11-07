@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/5a084a098ba9146690000969/train/python
+
+def time_convert(num):
+    min = num // 60
+    sec = num % 60
+    if num <= 0:
+        return '00:00'
+    final_min = f'0{min}' if min < 10 else str(min)
+    final_sec = f'0{sec}' if sec < 10 else str(sec)
+    return final_min + ':' + final_sec
