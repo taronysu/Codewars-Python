@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/66939247fc2af275cd8a82d3/train/python
+
+import math
+def radii(a, b, c):
+    s= (a+b+c)/2
+    K = math.sqrt(s*(s-a)*(s-b)*(s-c))
+    r = K / s
+    R = (a*b*c)/(4*K)
+    return r,R
