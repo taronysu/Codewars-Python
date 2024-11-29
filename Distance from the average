@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/568ff914fc7a40a18500005c/train/python
+
+def distances_from_average(t):
+    avg = sum(t)/len(t)
+    print(avg,t)
+    return [round(avg-el,2) for el in t]
