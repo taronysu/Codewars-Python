@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/566efcfbf521a3cfd2000056/train/python
+
+def reverse_fun(n):
+    res = ""
+    nn = list(n)
+    for i in range(1, len(n) + 1):
+        nn.reverse()
+        res += nn[0]
+        nn.pop(0)
+    return res
