@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/55968ab32cf633c3f8000008/train/python
+
+def initials(name):
+    names = name.title().split()
+    length = len(names) - 1
+    return '.'.join(el[0] if length != i else el for i, el in enumerate(names))
