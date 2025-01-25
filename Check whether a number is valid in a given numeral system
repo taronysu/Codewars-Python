@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/67757660c552a3a7ef9aaceb/train/python
+
+def validate_base(num, base):
+    valid = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"[:base]
+    for d in str(num):
+        if d not in valid:
+            return False
+    return True
