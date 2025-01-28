@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/55e7d9d63bdc3caa2500007d/train/python
+
+from math import gcd
+from functools import reduce
+
+def smallest(n):
+    return reduce(lambda x, y: x * y // gcd(x, y), range(1, n + 1), 1)
