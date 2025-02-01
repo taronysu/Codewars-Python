@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/55d410c492e6ed767000004f/train/python
+
+import re
+def vowel_2_index(string):
+        return re.sub(r'[aeiou]', lambda match: str(match.start() + 1), string, flags=re.IGNORECASE)
