@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/59a1ea8b70e25ef8e3002992/train/python
+
+def describe_the_shape(angles):
+    return "this will be a line segment or a dot" if angles < 3 else f'This shape has {angles} sides and each angle measures {(180*(angles-2)//angles)}'
