@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5822d89270ca28c85c0000f3/train/python
+
+def scramble(s, arr):
+    res = [None] * len(arr)
+    for i in range(len(arr)):
+        res[arr[i]] = s[i]
+    return ''.join(res)
