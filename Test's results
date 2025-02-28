@@ -1,0 +1,22 @@
+https://www.codewars.com/kata/599db0a227ca9f294b0000c8/train/python
+
+def test(array):
+    hash = {
+        'h': 0,
+        'a': 0,
+        'l': 0,
+    }
+    avg = round(sum(array) / len(array), 3)
+    for el in array:
+        if el == 10 or el == 9:
+            hash['h'] += 1
+        elif el == 8 or el == 7:
+            hash['a'] += 1
+        else:
+            hash['l'] += 1
+
+    top = lambda current_value: current_value == 10 or current_value == 9
+    if all(top(current_value) for current_value in array):
+        return [avg, hash, 'They did well']
+    else:
+        return [avg, hash]
