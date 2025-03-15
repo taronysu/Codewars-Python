@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/5810085c533d69f4980001cf/train/python
+
+def calculator(a,b,sign):
+    if type(a) != int or type(b)!= int:
+        return 'unknown value'
+    if sign == '+':
+        return a + b
+    elif sign == '-':
+        return a - b
+    elif sign == '*':
+        return a * b
+    elif sign == '/':
+        return a / b if b != 0 else None
+    else:
+        return 'unknown value'
