@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/57f75cc397d62fc93d000059/train/python
+
+def calc(x):
+    s=''
+    for el in x:
+        s+=str(ord(el))
+    n=s.replace('7','1')
+    s1=sum([int(el) for el in s])
+    s2=sum([int(el) for el in n])
+    return s1-s2
