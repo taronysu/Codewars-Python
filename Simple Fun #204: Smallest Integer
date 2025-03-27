@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/58fd96a59a9f65c2e900008d/train/python
+
+def smallest_integer(matrix):
+    arr = [item for sublist in matrix for item in sublist]
+    arr.sort()
+    res = 0
+    for num in arr:
+        if num == res:
+            res += 1
+        elif num > res:
+            break
+    return res
