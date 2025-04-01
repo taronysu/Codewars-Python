@@ -1,0 +1,16 @@
+https://www.codewars.com/kata/5ce6cf94cb83dc0020da1929/train/python
+
+def uglify_word(s):
+    s = list(s.lower())
+    c = 1
+    for i in range(len(s)):
+        if s[i].isalpha():
+            if c == 1:
+                s[i] = s[i].upper()
+                c = 0
+            else:
+                s[i] = s[i].lower()
+                c = 1
+        else:
+            c = 1
+    return ''.join(s)
