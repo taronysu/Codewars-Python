@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/5a1ebc2480171f29cf0000e5/train/python
+
+import math
+def sort_by_area(a):
+    return sorted(a, key=lambda x: math.pi * x**2 if isinstance(x, (int, float)) else x[0] * x[1])
