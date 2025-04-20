@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/5a651865fd56cb55760000e0/train/python
+
+def array_leaders(arr):
+    return [el for i, el in enumerate(arr) if el > sum(arr[i + 1:])]
