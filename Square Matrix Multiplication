@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/5263a84ffcadb968b6000513/train/python
+
+def matrix_mult(a, b):
+    res = []
+    length = len(a)
+    for i in range(length):
+        row = []
+        for j in range(length):
+            s = 0
+            for k in range(length):
+                s += a[i][k] * b[k][j]
+            row.append(s)
+        res.append(row)
+    return res
