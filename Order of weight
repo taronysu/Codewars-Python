@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/59ff4709ba2a14501500003a/train/python
+
+def arrange(arr):
+    def weight(w):
+        if w.endswith('KG'):
+            return float(w[:-2])
+        elif w.endswith('T'):
+            return float(w[:-1]) * 1000
+        else:
+            return float(w[:-1]) * 0.001
+
+    return sorted(arr, key=weight)
