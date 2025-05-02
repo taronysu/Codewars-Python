@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/56ce2f90aa4ac7a4770019fa/train/python
+
+import re
+def evenator(s):
+    return ' '.join([x if len(x) % 2 == 0 else x + x[-1] for x in re.sub(r'[.,?!_]', '', s).split()])
