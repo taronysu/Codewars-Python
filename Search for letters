@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/52dbae61ca039685460001ae/train/python
+
+def change(st):
+    st = st.lower()
+    alpha = 'abcdefghijklmnopqrstuvwxyz'
+    res = ''
+    s = list(alpha)
+    for i in range(len(alpha)):
+        if alpha[i] not in st:
+            res += '0'
+        else:
+            res += '1'
+    return res
