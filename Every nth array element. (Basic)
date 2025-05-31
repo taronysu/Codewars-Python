@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/5753b987aeb792508d0010e2/train/python\
+
+def every(array, n = 1, start = 0):
+    return array[start::n]
