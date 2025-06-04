@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/57193a349906afdf67000f50/train/python
+
+def magic_sum(arr):
+    even = [n for n in arr if n % 2 != 0]
+    filtered = [num for num in even if '3' in str(num)]
+    return sum(filtered)
