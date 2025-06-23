@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/5660aa3d5e011dfd6e000063/train/python
+
+def find_spaceship(map):
+    map = map.split("\n")[::-1]
+    for y in range(len(map)):
+        for x in range(len(map[y])):
+            if map[y][x] == "X":
+                return [x, y]
+
+    return "Spaceship lost forever."
