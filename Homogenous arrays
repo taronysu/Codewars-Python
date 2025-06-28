@@ -1,0 +1,16 @@
+https://www.codewars.com/kata/57ef016a7b45ef647a00002d/train/python
+
+def filter_homogenous(arrays):
+    res = []
+    a = True
+
+    for arr in arrays:
+        for x in arr:
+            if type(x) != type(arr[0]):
+                a = False
+                break
+        if a and arr != []:
+            res.append(arr)
+        a = True
+        
+    return res
