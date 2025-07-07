@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/565f1bd8f97d3e59c400014a/train/python
+
+def binary_fingers(bs):
+    fingers = ['Pinkie', 'Ring', 'Middle', 'Index', 'Thumb']
+    a = '0' * (5 - len(bs)) + bs
+    res = []
+    for i, el in enumerate(a):
+        if el == '1':
+            res.append(fingers[i])
+    return res
