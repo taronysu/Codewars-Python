@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/58e67378fd2d897b8a000110/train/python
+
+def num_combo(arr,num):
+    s = sum(arr)
+    return len([el for el in arr if s - el == num])
