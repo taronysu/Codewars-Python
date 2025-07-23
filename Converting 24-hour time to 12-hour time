@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/59b0ab12cf3395ef68000081/train/python
+
+def to_12_hour_time(input):
+    h, m = int(input[0:2]), int(input[2:4])
+    postfix = 'am'
+    if h >= 12:
+        postfix = 'pm'
+        h -= 12
+    return '{}:{:02d} {}'.format(h or 12, m, postfix)
