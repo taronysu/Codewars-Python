@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/55e6f5e58f7817808e00002e/train/python
+
+def seven(m):
+    times = 0
+    number = m
+    while len(str(number)) > 2:
+        times+=1
+        number = number // 10 - (number % 10) * 2
+    return (number, times)
