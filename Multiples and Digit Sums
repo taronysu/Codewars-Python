@@ -1,0 +1,16 @@
+https://www.codewars.com/kata/58ca77b9c0d640ecd2000b1e/train/python
+
+def getSum(n): 
+    sum = 0
+    for digit in str(n):  
+        sum += int(digit)       
+    return sum
+
+
+def procedure(i):
+    arr=[]
+    for j in range(1,101):
+        if j % i == 0:
+            arr.append(j)
+    mult = [getSum(el) for el in arr]
+    return sum(mult)
