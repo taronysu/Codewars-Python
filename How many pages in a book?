@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/622de76d28bf330057cd6af8/train/python
+
+def amount_of_pages(summary):
+    counter = 1
+    string = ''
+    while len(string) < summary:
+        string += str(counter) 
+        counter += 1
+    return counter - 1
