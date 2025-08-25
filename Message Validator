@@ -1,0 +1,23 @@
+https://www.codewars.com/kata/5fc7d2d2682ff3000e1a3fbc/train/python
+
+def is_a_valid_message(message):
+    while len(message) != 0:
+        digits = 0
+        while True:
+            ch = message[digits]
+            if not ('0' <= ch <= '9'):
+                break
+            digits += 1
+            if digits >= len(message):
+                return False
+
+        if digits == 0:
+            return False
+
+        number = int(message[:digits], 10)
+
+        if number >= len(message):
+            return False
+        message = message[number + digits :]
+
+    return True
