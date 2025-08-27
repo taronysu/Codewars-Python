@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/59ad13d5589d2a1d84000020/train/python
+
+def reverse_fizz_buzz(array):
+    f = array.index("Fizz") if "Fizz" in array else array.index("FizzBuzz")
+    b = array.index("Buzz") if "Buzz" in array else array.index("FizzBuzz")
+    return (f + 1, b + 1)
