@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/54d4c8b08776e4ad92000835/train/python
+
+def isPP(n):
+    for m in range(2, int(n**0.5) + 1):
+        l = 2
+        while m ** l <= n:
+            if m ** l == n:
+                return [m, l]
+            l += 1
