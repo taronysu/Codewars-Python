@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/56e9e4f516bcaa8d4f001763/train/python
+
+def show_sequence(n):
+    total = 0
+    res = ''
+    if n < 0:
+        return str(n) + '<' + '0'
+    if n == 0:
+        return '0=0'
+    for i in range(n+1):
+        total = total + i
+        i = str(i)
+        res = res + i + '+'
+    return res[:-1] + ' ' + '= ' + str(total)
