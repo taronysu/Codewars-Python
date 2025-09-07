@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/56414fdc6488ee99db00002c/train/python
+
+def absent_vowel(x):
+    vowels = "aeiou"
+    for i in range(len(vowels)):
+        if vowels[i] not in x:
+            return i
