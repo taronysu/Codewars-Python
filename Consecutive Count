@@ -1,0 +1,17 @@
+https://www.codewars.com/kata/59c3e819d751df54e9000098/train/python
+
+def get_consective_items(items, key):
+    pos, max_count, count = [], 0, 0
+    for i, item in enumerate(str(items)):
+        if item == str(key):
+            pos.append(i)
+    for i in range(len(pos)-1):
+        if pos[i+1] - pos[i] == 1:
+            count += 1
+        else:
+            count = 0
+        if count > max_count:
+            max_count = count
+    if len(pos) == 0:
+        return 0
+    return max_count + 1
