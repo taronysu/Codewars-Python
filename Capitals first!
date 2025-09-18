@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/55c353487fe3cc80660001d4/train/python
+
+def capitals_first(text):
+    t = [el for el in text.split(' ') if el[0].isalpha()]
+    up = [el for el in t if el[0].isupper()]
+    lo = [el for el in t if not el[0].isupper()]
+    return ' '.join(up + lo)
