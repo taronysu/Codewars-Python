@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/5276c18121e20900c0000235/train/python
+
+def find_missing_number(array):
+    n = len(array)
+    return (n + 2) * (n + 1) // 2 - sum(array)
