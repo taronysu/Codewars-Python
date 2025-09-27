@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/5254bd1357d59fbbe90001ec/train/python
+
+def get_score(n):
+    return n * (n + 1) * 25
