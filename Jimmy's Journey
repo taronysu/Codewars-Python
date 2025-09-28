@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/5c7ed27f59036f0010cca9c4/train/python
+
+def ETA(path):
+    t = { '-': 1, '/': 2, '|': 0.5 }
+    return sum([t[l] for l in path])
