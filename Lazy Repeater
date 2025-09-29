@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/51fc3beb41ecc97ee20000c3/train/python
+
+class make_looper:
+
+    def __init__(self, s):
+        self.s = s
+        self.i = -1
+
+    def __call__(self):
+        self.i += 1
+        return self.s[self.i % len(self.s)]
