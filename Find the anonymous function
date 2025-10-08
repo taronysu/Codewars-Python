@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/55a12bb8f0fac1ba340000aa/train/python
+
+
+def find_function(func,arr):
+    for i in range(len(func)):
+        if callable(func[i]):
+            return list(filter(func[i], arr))
