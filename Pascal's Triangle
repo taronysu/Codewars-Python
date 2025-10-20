@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/5226eb40316b56c8d500030f/train/python
+
+def pascals_triangle(n):
+    p_row = []
+    f_rows = []
+    for x in range(n):
+        next_row = [1] + [sum(p_row[i:i + 2]) for i in range(x)]
+        f_rows.extend(next_row)
+        p_row = next_row
+
+    return f_rows
