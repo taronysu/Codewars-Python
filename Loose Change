@@ -1,0 +1,19 @@
+https://www.codewars.com/kata/5571f712ddf00b54420000ee/train/python
+
+def loose_change(cents):
+    d = {'Nickels': 0, 'Pennies': 0, 'Dimes': 0, 'Quarters': 0}
+    if cents <= 0: return d
+    while cents >= 1:
+        if cents >= 25:
+            d['Quarters'] += 1
+            cents -= 25
+        elif cents >= 10:
+            d['Dimes'] += 1
+            cents -= 10
+        elif cents >= 5:
+            d['Nickels'] += 1
+            cents -= 5
+        else:
+            d['Pennies'] += 1
+            cents -= 1
+    return d
