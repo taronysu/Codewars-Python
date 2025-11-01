@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/596f6385e7cd727fff0000d6/train/python
+
+def avg_array(arr):
+    result = []
+    for i in range(len(arr[0])):
+        num = 0
+        for j in range(len(arr)):
+            num += arr[j][i]
+        result.append(num / len(arr))
+    return result
