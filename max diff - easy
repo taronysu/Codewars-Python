@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/588a3c3ef0fbc9c8e1000095/train/python
+
+def max_diff(l):
+    return max(l) - min(l) if len(l) > 1 else 0
