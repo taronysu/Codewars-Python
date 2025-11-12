@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/559cc2d2b802a5c94700000c/train/python
+
+def consecutive(arr):
+    if not arr:
+        return 0
+    first = min(arr)
+    last = max(arr)
+    if first == last:
+        return 0
+    else:
+        return last - len(arr) - first + 1
