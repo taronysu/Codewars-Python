@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5937ae46377144bb2f000029/train/python
+
+def get_rectangle_string(w, h):
+    return ''.join(
+        ('*' * w + '\r\n' if i == 0 or i == h - 1 else '*' + ' ' * (w - 2) + '*\r\n')
+        for i in range(h)
+    )
