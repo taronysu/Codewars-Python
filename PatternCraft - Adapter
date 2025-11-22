@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/56919e637b2b971492000036/train/python
+
+class MarioAdapter:
+    def __init__(self, mario):
+        self.mario = mario
+
+    def attack(self, target):
+        target.health -= self.mario.jump_attack()
