@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/595877be60d17855980013d3/train/python
+
+def euclidean_distance(point1, point2):
+    dist = 0
+    if len(point1) != len(point2):
+        return -1
+    for i in range(len(point1)):
+        dist += (point1[i] - point2[i]) ** 2
+    return round((dist ** 0.5) * 100) / 100
