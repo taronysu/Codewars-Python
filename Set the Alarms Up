@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/68c31c23f0aee823d84cdd42/train/python
+
+from datetime import datetime, timedelta
+
+def set_the_alarms_up(wake_time, num_alarms):    
+    alarms = []
+    wake_time_obj = datetime.strptime(wake_time, "%H:%M")
+    
+    for i in range(num_alarms):
+        alarm_time = wake_time_obj + timedelta(minutes=5 * i)
+        alarms.append(alarm_time.strftime("%H:%M"))
+    
+    return alarms
