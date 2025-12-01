@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/557592fcdfc2220bed000042/train/python
+
+def pattern(n: int) -> str:
+    if n <= 0:
+        return ""
+    
+    pattern = ""
+    for i in range(n):
+        for j in range(n):
+            pattern += str((i + j) % n + 1)
+        pattern += "\n"
+    
+    return pattern.strip()
