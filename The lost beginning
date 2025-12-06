@@ -1,0 +1,23 @@
+https://www.codewars.com/kata/659af96994b858db10e1675f/train/python
+
+def find(s):
+    for length in range(1, len(s) // 2 + 1):
+        first_number = int(s[:length])
+        current_number = first_number
+        index = length
+        valid_sequence = True
+        
+        while index < len(s):
+            next_number = str(current_number + 1)
+            next_length = len(next_number)
+            if s[index:index + next_length] == next_number:
+                index += next_length
+                current_number += 1
+            else:
+                valid_sequence = False
+                break
+        
+        if valid_sequence and index == len(s):
+            return first_number
+    
+    return int(s)
