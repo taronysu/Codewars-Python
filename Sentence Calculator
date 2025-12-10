@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/5970fce80ed776b94000008b/train/python
+
+def letters_to_numbers(s):
+    total_score = 0
+    for char in s:
+        if char.islower():  # Lower case letters
+            total_score += ord(char) - ord('a') + 1
+        elif char.isupper():  # Upper case letters
+            total_score += (ord(char) - ord('A') + 1) * 2
+        elif char.isdigit():  # Digits
+            total_score += int(char)    
+    return total_score
