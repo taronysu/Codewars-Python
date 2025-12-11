@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/67b7a527c9f842fd3b02adb8/train/python
+
+def travel_distance(avg_speed, travel_time):
+    speed_kph = avg_speed * 1.852
+    # Convert travel time from minutes to hours
+    travel_time_hours = travel_time / 60
+    # Calculate distance
+    distance_km = speed_kph * travel_time_hours
+    return distance_km
