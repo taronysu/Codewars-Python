@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/52dffa05467ee54b93000712/train/python
+
+def pseudo_sort(sentence):
+    import string
+
+    # Remove punctuation
+    sentence = sentence.translate(str.maketrans('', '', string.punctuation))
+    words = sentence.split()
+
+    # Separate words into lower and upper case
+    lower_case_words = sorted([word for word in words if word[0].islower()])
+    upper_case_words = sorted([word for word in words if word[0].isupper()], reverse=True)
+
+    # Combine the sorted lists
+    return ' '.join(lower_case_words + upper_case_words)
