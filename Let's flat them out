@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/572cc218aedd20cc83000679/train/python
+
+def flatten(d,parent_key='', sep='/'):
+    items = {}
+    for k, v in d.items():
+        new_key = f"{parent_key}{sep}{k}" if parent_key else k
+        if isinstance(v, dict) and v:
+            items.update(flatten(v, new_key, sep=sep))
+        elif isinstance(v, dict) and not v:
+            items[new_key] = ""
+        else:
+            items[new_key] = v
+    return items
