@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/57c15d314677bb2bd4000017/train/python
+
+def doors(n):
+    return int(n**0.5)
