@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/59c32c609f0cbce0ea000073/train/python
+
+def pythagorean_triplet(n):
+    for a in range(1, int(n**(1/3)) + 1):
+        for b in range(a + 1, int(n**(1/2)) + 1):
+            c = (a**2 + b**2)**0.5
+            if a * b * c == n and c.is_integer():
+                return [a, b, int(c)]
+    return None
