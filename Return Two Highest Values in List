@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/57ab3c09bb994429df000a4a/train/python
+
+def two_highest(a):
+    return sorted(list(set(a)), reverse=True)[:2]
