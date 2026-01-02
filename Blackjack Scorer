@@ -1,0 +1,18 @@
+https://www.codewars.com/kata/534ffb35edb1241eda0015fe/train/python
+
+def score_hand(cards):
+    total = 0
+    number_of_aces = 0
+    for card in cards:
+        if card == "A":
+            total += 1
+            number_of_aces += 1
+        elif card in ["J", "Q", "K"]:
+            total += 10
+        else:
+            total += int(card)
+    
+    if total <= 11 and number_of_aces >= 1:
+        total += 10
+    
+    return total
