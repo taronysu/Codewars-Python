@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/574758e396b130b63e00069b/train/python
+
+def polygon_area(a, b, c, d):
+    return (a + c) * b / 2
