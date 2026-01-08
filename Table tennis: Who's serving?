@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/679e3754cb041c0685865dde/train/python
+
+def who_is_serving(current_round: int) -> int:
+    if current_round <= 0:
+        return "Invalid round number"
+    
+    if (current_round - 1) // 2 % 2 == 0:
+        return 1
+    else:
+        return 2
