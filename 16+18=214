@@ -1,0 +1,18 @@
+https://www.codewars.com/kata/5effa412233ac3002a9e471d/train/python
+
+def add(num1, num2):
+    a = str(num1)
+    b = str(num2)
+    max_length = max(len(a), len(b))
+    res = ''
+
+    for i in range(max_length - 1, -1, -1):
+        i_a = len(a) - (i + 1)
+        i_b = len(b) - (i + 1)
+
+        v_a = int(a[i_a]) if i_a >= 0 else 0
+        v_b = int(b[i_b]) if i_b >= 0 else 0
+
+        res += str(v_a + v_b)
+
+    return int(res)
