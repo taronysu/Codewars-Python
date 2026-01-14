@@ -1,0 +1,33 @@
+https://www.codewars.com/kata/6834f1a80e0a48c2ea3feeb0/train/python
+
+def i_before_e(word):
+    result = []
+    i_count = 0
+    e_count = 0
+    c_preceded = False
+
+    for index, char in enumerate(word):
+        if char == 'i':
+            i_count += 1
+        elif char == 'e':
+            e_count += 1
+        else:
+            if c_preceded:
+                result.append('e' * e_count)
+                result.append('i' * i_count)
+            else:
+                result.append('i' * i_count)
+                result.append('e' * e_count)
+            result.append(char)
+            i_count = 0
+            e_count = 0
+            c_preceded = (char == 'c')
+
+    if c_preceded:
+        result.append('e' * e_count)
+        result.append('i' * i_count)
+    else:
+        result.append('i' * i_count)
+        result.append('e' * e_count)
+
+    return ''.join(result)
