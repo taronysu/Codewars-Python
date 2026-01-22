@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/66e793bba4b1a6f2e8f890e5/train/python
+
+def trailing_zeros(n):
+    return bin(n)[::-1].find('1')
