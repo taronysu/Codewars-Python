@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/66fc9ca2e6d1d0e9cc2e4a4c/train/python
+
+def count_streets(streets, drivers):
+    street_index = {street: index for index, street in enumerate(streets)}
+    result = []
+    
+    for entry, exit in drivers:
+        entry_index = street_index[entry]
+        exit_index = street_index[exit]
+        result.append(abs(exit_index - entry_index) - 1)
+    
+    return result
