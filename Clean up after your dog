@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/57faa6ff9610ce181b000028/train/python
+
+def crap(x, bags, cap):
+    c = 0
+    for el in x:
+        for elem in el:
+            if elem == "@":
+                c += 1
+            if elem == "D":
+                return "Dog!!"
+    return "Clean" if c <= bags * cap else "Cr@p"
