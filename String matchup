@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/59ca8e8e1a68b7de740001f4/train/python
+
+def solve(a,b):
+    arr = []
+    for i in range(len(b)):
+        count = 0
+        for j in range(len(a)):
+            if a[j] == b[i]:
+                count += 1
+        arr.append(count)
+    return arr
