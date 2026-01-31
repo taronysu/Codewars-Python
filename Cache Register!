@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/66e509f59c8b4118ac009930/train/python
+
+transactions = []
+def register_transaction(amount):
+    global transactions
+    formatted_amount = "${:,.2f}".format(amount)
+    transactions.append(formatted_amount)
+    return transactions
