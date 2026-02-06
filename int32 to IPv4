@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/52e88b39ffb6ac53a400022e/train/python
+
+def int32_to_ip(n):
+    return f"{(n >> 24) & 255}.{(n >> 16) & 255}.{(n >> 8) & 255}.{n & 255}"
