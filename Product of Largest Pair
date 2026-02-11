@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/5784c89be5553370e000061b/train/python
+
+def max_product(arr):
+    if len(arr) < 2:
+        return None
+    first, second = float('-inf'), float('-inf')
+    for number in arr:
+        if number > first:
+            second = first
+            first = number
+        elif number > second:
+            second = number
+    return first * second
