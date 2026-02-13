@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/557dd2a061f099504a000088/train/python
+
+def list_to_array(node):
+    array = []
+    current = node
+
+    while current:
+        array.append(current.value)
+        current = current.next
+
+    return array
