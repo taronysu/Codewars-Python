@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/66e7c0628a394dd74feb99ca/train/python
+
+def soln(n):
+    identity_matrix = [[1 if i == j else 0 for j in range(n)] for i in range(n)]
+    bit_string = ''.join(str(bit) for row in identity_matrix for bit in row)
+    return int(bit_string, 2)
