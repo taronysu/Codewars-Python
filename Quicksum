@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/569924899aa8541eb200003f/train/python
+
+def quicksum(packet):
+    if not all(c.isupper() or c.isspace() for c in packet) or packet[0] == ' ' or packet[-1] == ' ':
+        return 0
+    
+    total = 0
+    for index, char in enumerate(packet):
+        if char != ' ':
+            value = ord(char) - ord('A') + 1
+            total += (index + 1) * value
+            
+    return total
