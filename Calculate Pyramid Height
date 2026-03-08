@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/56968ce7753513604b000055/train/python
+
+def pyramid_height(n):
+    height = 0
+    cubes_used = 0
+    
+    while True:
+        height += 1
+        cubes_needed = height ** 2
+        cubes_used += cubes_needed
+        
+        if cubes_used > n:
+            return height - 1
