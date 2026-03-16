@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/598d91785d4ce3ec4f000018/train/python
+
+def name_value(a):
+    alphabet = " abcdefghijklmnopqrstuvwxyz"
+    values = []
+    for i in range(len(a)):
+        values.append(0)
+        for j in range(len(a[i])):
+            values[i] += alphabet.index(a[i][j])
+        values[i] *= (i + 1)
+    return values
