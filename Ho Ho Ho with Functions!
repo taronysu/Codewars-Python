@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/52af1f150fcae8d33d0009bc/train/python
+
+def ho(ho = None):
+    return f"Ho {ho}" if ho else "Ho!"
