@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/595910299197d929a10005ae/train/python
+
+def pizza_rewards(customers, min_orders, min_order_value):
+    eligible = set()
+    
+    for customer, orders in customers.items():
+        if len(orders) >= min_orders and sum(order >= min_order_value for order in orders) >= min_orders:
+            eligible.add(customer)
+    
+    return eligible
