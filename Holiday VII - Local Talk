@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/57e92812750fcc051800004d/train/python
+
+def pak(s):
+    words = s.split()
+    if not words:
+        return ""
+    return ' pak '.join(words)
