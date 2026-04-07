@@ -1,0 +1,29 @@
+https://www.codewars.com/kata/57ba58d68dcd97e98c00012b/train/python
+
+def prime_primes(N):
+    def is_prime(num):
+        if num < 2:
+            return False
+        for i in range(2, int(num**0.5) + 1):
+            if num % i == 0:
+                return False
+        return True
+
+    primes = []
+    for i in range(2, N):
+        if is_prime(i):
+            primes.append(i)
+
+    count = 0
+    total_sum = 0
+
+    for i in range(len(primes)):
+        for j in range(len(primes)):
+            if i != j:
+                prime_a = primes[i]
+                prime_b = primes[j]
+                if prime_a < prime_b:
+                    count += 1
+                    total_sum += prime_a / prime_b
+
+    return (count, total_sum // 1)
