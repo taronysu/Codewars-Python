@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/5bdc191306a8a678f6000187/train/python
+
+def shift_left(s,t):
+    i = len(s) - 1
+    j = len(t) - 1
+    while i >= 0 and j >= 0 and s[i] == t[j]:
+        i -= 1
+        j -= 1
+    return (i + 1) + (j + 1)
