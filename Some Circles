@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/56143efa9d32b3aa65000016/train/python
+
+import math
+
+def sum_circles(*diameters):
+    total_area = sum(math.pi * (d / 2) ** 2 for d in diameters)
+    return f"We have this much circle: {round(total_area)}"
