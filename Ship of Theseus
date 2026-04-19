@@ -1,0 +1,23 @@
+https://www.codewars.com/kata/69b83710b26939b35fd10429/train/python
+
+def ship_of_theseus(ship):
+    if len(ship) <= 1:
+        return True
+
+    for i in range(len(ship) - 1):
+        diffs = 0
+        
+        current = ship[i]
+        next = ship[i + 1]
+        
+        if len(current) != len(next):
+            return False
+        
+        for val, next_val in zip(current, next):
+            if val != next_val:
+                diffs += 1
+        
+        if diffs != 1:
+            return False
+            
+    return True
