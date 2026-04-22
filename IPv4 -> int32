@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/52ea928a1ef5cfec800003ee/train/python
+
+def ip_to_int32(ip):
+    octets = ip.split('.')
+    return (int(octets[0]) << 24) + (int(octets[1]) << 16) + (int(octets[2]) << 8) + int(octets[3])
