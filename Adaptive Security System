@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/69b58aaee8f1deef7ece7d0e/train/python
+
+def breach_attempts(hackers, security_level, increase):
+    breaches = 0
+    for hacker in hackers:
+        if hacker > security_level:
+            breaches += 1
+        else:
+            security_level += increase
+    return breaches
