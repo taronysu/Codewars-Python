@@ -1,0 +1,23 @@
+https://www.codewars.com/kata/671bd5419ea261fbb8d0a0ca/train/python
+
+def decipher(strings):
+    n = len(strings)
+    length = len(strings[0])
+    result = []
+
+    for i in range(length):
+        total = 0
+        for string in strings:
+            char = string[i]
+            if char == ' ':
+                value = 0
+            else:
+                value = ord(char) - ord('a') + 1
+            total += value
+        average = total // n
+        if average == 0:
+            result.append(' ')
+        else:
+            result.append(chr(average + ord('a') - 1))
+
+    return ''.join(result)
