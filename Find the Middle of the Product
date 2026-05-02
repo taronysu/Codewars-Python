@@ -1,0 +1,24 @@
+https://www.codewars.com/kata/5ac54bcbb925d9b437000001/train/python
+
+def find_middle(s):
+    if not isinstance(s, str):
+        return -1
+    
+    digits = [int(char) for char in s if char.isdigit()]
+    
+    if not digits:
+        return -1
+    
+    product = 1
+    for digit in digits:
+        product *= digit
+    
+    product_str = str(product)
+    length = len(product_str)
+    
+    if length % 2 == 0:
+        middle_two = product_str[length // 2 - 1:length // 2 + 1]
+        return int(middle_two)
+    else:
+        middle_one = product_str[length // 2]
+        return int(middle_one)
