@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/5816f2580e80c5e075000a4f/train/python
+
+from fractions import Fraction
+
+def add_fracs(*fractions):
+    if not fractions:
+        return ""
+    
+    total = sum(Fraction(frac) for frac in fractions)
+    
+    if total.denominator == 1:
+        return str(total.numerator)
+    return str(total)
