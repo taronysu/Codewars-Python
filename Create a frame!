@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/5672f4e3404d0609ec00000a/train/python
+
+def frame(text, char):
+    maxlen = max(len(e) for e in text)
+    n = char * (4 + maxlen)
+    res = [n]
+
+    for j in text:
+        filler = len(n) - 3 - len(j)
+        res.append(f"{char} {j}{' ' * filler}{char}")
+
+    res.append(n)
+
+    return "\n".join(res)
