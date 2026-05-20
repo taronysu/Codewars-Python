@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/588810c99fb63e49e1000606/train/python
+
+def house_of_cats(legs):
+    arr = []
+    for i in range(legs // 4 + 1):
+        arr.append(legs / 2 - i * 2)
+    return arr[::-1]
