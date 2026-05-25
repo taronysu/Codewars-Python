@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/56853c44b295170b73000007/train/python
+
+def is_square(arr):
+    return all(el**0.5 % 1 == 0 for el in arr) if arr else None
