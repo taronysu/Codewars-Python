@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/5375f921003bf62192000746/train/python
+
+import re
+def abbreviate(input_string):
+    def abbreviate(word):
+        if len(word) < 4:
+            return word
+        return f"{word[0]}{len(word) - 2}{word[-1]}"
+
+    words = re.findall(r'[a-zA-Z]+|[^a-zA-Z]+', input_string)
+    abbreviated = [abbreviate(word) if word.isalpha() else word for word in words]
+    return ''.join(abbreviated)
