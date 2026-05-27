@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/545b342082e55dc9da000051/train/python
+
+def partition(lst, func):
+    true_list = [item for item in lst if func(item)]
+    false_list = [item for item in lst if not func(item)]
+    return true_list, false_list
