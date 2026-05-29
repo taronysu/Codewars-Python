@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/537baa6f8f4b300b5900106c/train/python
+
+def circle_area(radius):
+    if radius <= 0:
+        raise ValueError('The radius must be a positive number greater than zero')
+    
+    return 3.14159 * radius ** 2
