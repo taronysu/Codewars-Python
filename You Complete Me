@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/63967eb85e54bd00237d2201/train/python
+
+def complete(s):
+    for i in range(1, len(s) + 1):
+        if s[i:] == s[i:][::-1]:
+            return s + s[:i][::-1]
