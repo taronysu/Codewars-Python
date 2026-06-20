@@ -1,0 +1,26 @@
+https://www.codewars.com/kata/54eecc187f9142cc4600119e/train/python
+
+class HTMLGen:
+    def a(self, innerHTML):
+        return f"<a>{innerHTML}</a>"
+
+    def b(self, innerHTML):
+        return f"<b>{innerHTML}</b>"
+
+    def p(self, innerHTML):
+        return f"<p>{innerHTML}</p>"
+
+    def body(self, innerHTML):
+        return f"<body>{innerHTML}</body>"
+
+    def div(self, innerHTML):
+        return f"<div>{innerHTML}</div>"
+
+    def span(self, innerHTML):
+        return f"<span>{innerHTML}</span>"
+
+    def title(self, innerHTML):
+        return f"<title>{innerHTML}</title>"
+
+    def comment(self, innerHTML):
+        return f"<!--{innerHTML}-->"
