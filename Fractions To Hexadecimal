@@ -1,0 +1,20 @@
+https://www.codewars.com/kata/6a3c22c2d5761bf8d86987e2/train/python
+
+def f2hex(fraction):
+    from fractions import Fraction
+
+    frac = Fraction(fraction)
+    integer_part = frac.numerator // frac.denominator
+    fractional_part = frac - integer_part
+
+    hex_integer = hex(integer_part).replace('0x', '')
+    hex_fraction = ''
+
+    while fractional_part > 0 and len(hex_fraction) < 6:
+        fractional_part *= 16
+        hex_digit = int(fractional_part)
+        hex_fraction += hex(hex_digit).replace('0x', '')
+        fractional_part -= hex_digit
+
+    result = hex_integer + ('.' + hex_fraction if hex_fraction else '')
+    return result.rstrip('0').rstrip('.') if '.' in result else result
