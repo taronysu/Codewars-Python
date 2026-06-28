@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/5704bf9b38428f1446000a9d/train/python
+
+def histogram(data: list[int], binWidth: int) -> list[int]:
+    if not data:
+        return []
+    
+    max_value = max(data)
+    bins_count = (max_value // binWidth) + 1
+    histogram = [0] * bins_count
+    
+    for number in data:
+        histogram[number // binWidth] += 1
+    
+    return histogram
