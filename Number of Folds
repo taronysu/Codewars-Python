@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/59cfe5b023daccfd07000048/train/python
+
+def number_of_folds(n):
+    if n < 1:
+        return 0
+    folds = 0
+    while (2 ** folds) < n:
+        folds += 1
+    return folds
