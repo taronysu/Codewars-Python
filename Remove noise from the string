@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/5681cf0be812b41721000034/train/python
+
+def remove_noise(message):
+    noise_characters = "%$&/#·@|º\\ª"
+    return ''.join(char for char in message if char not in noise_characters)
