@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/596e91b48c92ceff0c00001f/train/python
+
+def words_to_hex(input_string):
+    words = input_string.split()
+    hex_colors = []
+
+    for word in words:
+        hex_value = ''
+        for char in word[:3]:
+            hex_value += format(ord(char), '02x')
+        if len(word) < 3:
+            hex_value += '00' * (3 - len(word))
+        hex_colors.append(f'#{hex_value}')
+
+    return hex_colors
