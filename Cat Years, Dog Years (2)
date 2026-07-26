@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5a6d3bd238f80014a2000187/train/python
+
+def owned_cat_and_dog(cat_years, dog_years):
+    def the_human_age(years, n):
+        return 0 if years < 15 else 1 if years < 24 else 2 + (years - 24) / n
+    
+    return [int(the_human_age(cat_years, 4)), int(the_human_age(dog_years, 5))]
