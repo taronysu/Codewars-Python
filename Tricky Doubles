@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/56971747aa359bdbf800004d/train/python
+
+def tricky_doubles(value):
+    str_value = str(value)
+    length = len(str_value)
+    
+    if length % 2 == 0:
+        half_length = length // 2
+        if str_value[:half_length] == str_value[half_length:]:
+            return value
+    
+    return value * 2
