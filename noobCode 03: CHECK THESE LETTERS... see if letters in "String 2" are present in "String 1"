@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/57470efebf81fea166001627/train/python
+
+def letter_check(arr):
+    string1, string2 = map(str.lower, arr)
+    first, second = list(string1), list(string2)
+    return all(char in first for char in second)
