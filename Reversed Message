@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/5a0efbb7c374cb69970000cf/train/python
+
+def reverse_message(s):
+    return ' '.join(text.capitalize() for text in s.lower()[::-1].split())
