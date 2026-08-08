@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/6a68ed7894f29599a1f7a248/train/python
+
+def split_by_mask(strng, mask):
+    total_length = sum(mask)
+    if total_length != len(strng):
+        return None
+
+    result = []
+    start_index = 0
+
+    for length in mask:
+        result.append(strng[start_index:start_index + length])
+        start_index += length
+
+    return result
