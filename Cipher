@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5a19701d80171fd71d000029/train/python
+
+def encode(s):
+    return ''.join(chr(ord(char) * 6) for char in s)
+
+def decode(s):
+    return ''.join(chr(ord(char) // 6) for char in s)
