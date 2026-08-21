@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/60edafd71dad1800563cf933/train/python
+
+def counter():
+    c = 0
+
+    def increase_counter():
+        nonlocal c
+        c += 1
+        return c
+
+    return increase_counter
