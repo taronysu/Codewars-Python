@@ -1,0 +1,18 @@
+https://www.codewars.com/kata/605f5d33f38ca800322cb18f/train/python
+
+def tap_code_translation(text):
+    text = text.upper().replace('C','K')
+    a = [["A", "B", "K", "D", "E",],
+         ["F", "G", "H",  "I", "J"],
+         ["L", "M", "N",  "O", "P"],
+         ["Q", "R", "S",  "T", "U"],
+         ["V", "W", "X",  "Y", "Z"]]
+    arr = []
+    for el in text:
+        for i, row in enumerate(a):
+            if el in row:
+                x = i + 1 
+                y = row.index(el) + 1
+        arr.extend([x,y])
+    dots = [el*'.' for el in arr]
+    return ' '.join(dots)
