@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/5a433c7a8f27f23bb00000dc/train/python
+
+def split_by_value(k, elements):
+    less_than_k = [x for x in elements if x < k]
+    not_less_than_k = [x for x in elements if x >= k]
+    return less_than_k + not_less_than_k
