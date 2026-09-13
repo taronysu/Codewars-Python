@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/56a4a3d4043c316002000042/train/python
+
+import re
+def validate_time(time):
+    regex = "^([01]?[0-9]|2[0-3]):[0-5][0-9]$"
+    t = re.compile(regex)
+    if (time == "") :
+        return False;
+    m = re.search(t, time)
+    if m is None :
+        return False
+    else :
+        return True
