@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5a87449ab1710171300000fd/train/python
+
+def tidyNumber(n):
+    n = str(n)
+    s = list(n)
+    sorted_s = sorted(s)
+    return n == ''.join(sorted_s)
