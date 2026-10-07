@@ -1,0 +1,22 @@
+https://www.codewars.com/kata/58925dcb71f43f30cd00005f/train/python
+
+from itertools import permutations
+
+def latest_clock(d1,d2,d3,d4):
+    digits = [d1, d2, d3, d4]
+    max_time = -1
+    
+    for perm in permutations(digits):
+        hours = perm[0] * 10 + perm[1]
+        minutes = perm[2] * 10 + perm[3]
+        
+        if hours < 24 and minutes < 60:
+            total_minutes = hours * 60 + minutes
+            max_time = max(max_time, total_minutes)
+    
+    if max_time == -1:
+        return "Not possible"
+    
+    final_hours = max_time // 60
+    final_minutes = max_time % 60
+    return f"{final_hours:02}:{final_minutes:02}"
