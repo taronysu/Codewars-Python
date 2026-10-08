@@ -1,0 +1,16 @@
+https://www.codewars.com/kata/5fbfc2c0dce9ec000de691e3/train/python
+
+def set_clock(start_time, buttons):
+    hours, minutes = map(int, start_time.split(':'))
+    
+    for button in buttons:
+        if button == 'H':
+            hours += 1
+            if hours == 25:
+                hours = 1
+        elif button == 'M':
+            minutes += 1
+            if minutes == 60:
+                minutes = 0
+    
+    return f"{hours}:{minutes:02d}"
