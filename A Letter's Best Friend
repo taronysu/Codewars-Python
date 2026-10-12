@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/64fc03a318692c1333ebc04c/train/python
+
+def best_friend(sentence, char1, char2):
+    occurrences = []
+    for i in range(len(sentence) - 1):
+        if sentence[i] == char1 and sentence[i + 1] == char2:
+            occurrences.append(sentence[i:i + 2])
+    return len(occurrences) == sentence.count(char1)
