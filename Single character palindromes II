@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/5a66ea69e6be38219f000110/train/python
+
+def solve(s):
+    left, right = 0, len(s) - 1
+    mismatch_count = 0
+    
+    while left < right:
+        if s[left] != s[right]:
+            mismatch_count += 1
+            if mismatch_count > 1:
+                return False
+        left += 1
+        right -= 1
+    
+    return mismatch_count == 1 or (mismatch_count == 0 and len(s) % 2 == 1)
