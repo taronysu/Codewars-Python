@@ -1,0 +1,22 @@
+https://www.codewars.com/kata/55bc0c54147a98798f00003e/train/python
+
+def substring(s):
+    left, right = 0, 0
+    char_map = {}
+    max_length = 0
+    start_index = 0
+
+    while right < len(s):
+        char_map[s[right]] = right
+        right += 1
+
+        while len(char_map) > 2:
+            if char_map[s[left]] == left:
+                del char_map[s[left]]
+            left += 1
+
+        if right - left > max_length:
+            max_length = right - left
+            start_index = left
+
+    return s[start_index:start_index + max_length]
