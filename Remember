@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/55a243393fb3e87021000198/train/python
+
+def remember(s):
+    char_count = {}
+    result = []
+
+    for char in s:
+        char_count[char] = char_count.get(char, 0) + 1
+        if char_count[char] == 2:
+            result.append(char)
+
+    return result
