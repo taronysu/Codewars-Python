@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/6501aa820038a6b0bd098afb/train/python
+
+def safecracker(start, increments):
+    first_turn = (start - increments[0]) % 100
+    second_turn = (first_turn + increments[1]) % 100
+    third_turn = (second_turn - increments[2]) % 100
+    return (first_turn, second_turn, third_turn)
