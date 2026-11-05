@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/6ad649de715eb5f5359a7e62/train/python
+
+def battery_bars(p):
+    bars = int(p // 20)
+    return "[" + "#" * bars + "." * (5 - bars) + "]"
