@@ -1,0 +1,19 @@
+https://www.codewars.com/kata/6a784d563bfd7732517d9832/train/python
+
+def vertical(words):
+    if not words:
+        return ""
+    
+    max_length = max(len(word) for word in words)
+    result = []
+    
+    for i in range(max_length):
+        row = []
+        for word in words:
+            if i < len(word):
+                row.append(word[i])
+            else:
+                row.append(" ")
+        result.append(" ".join(row).rstrip())
+    
+    return "\n".join(result)
