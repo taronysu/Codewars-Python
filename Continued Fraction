@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/660e5631b673a8004b71d208/train/python
+
+def continued_fraction(numerator, denominator):
+    if numerator == 0:
+        return []
+    
+    result = []
+    while denominator:
+        quotient = numerator // denominator
+        result.append(quotient)
+        numerator, denominator = denominator, numerator - quotient * denominator
+    
+    return result
