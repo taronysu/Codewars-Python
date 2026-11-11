@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/5845e6a7ae92e294f4000315/train/python
+
+def sum_nested_numbers(arr,level=1):
+    total = 0
+    for item in arr:
+        if isinstance(item, list):
+            total += sum_nested_numbers(item, level + 1)
+        else:
+            total += item ** level
+    return total
